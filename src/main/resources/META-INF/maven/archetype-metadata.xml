@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<archetype-descriptor name="alambic-addon-archetype">
+
+	<requiredProperties>
+		<requiredProperty key="addon-name">
+			<defaultValue>${artifactId}</defaultValue>
+		</requiredProperty>
+		<requiredProperty key="addon-description">
+			<defaultValue>Alambic addon</defaultValue>
+		</requiredProperty>
+	</requiredProperties>
+
+	<fileSets>
+		<fileSet>
+			<directory>src/main/assembly/</directory>
+		</fileSet>
+
+		<fileSet>
+			<directory>jobs</directory>
+		</fileSet>
+
+		<fileSet>
+			<directory>output</directory>
+		</fileSet>
+
+		<fileSet filtered="true">
+			<directory>scripts</directory>
+		</fileSet>
+
+		<fileSet>
+			<directory>resources</directory>
+		</fileSet>
+
+		<fileSet>
+			<directory>vars</directory>
+		</fileSet>
+
+		<fileSet filtered="true">
+			<directory></directory>
+			<includes>
+				<include>addon.properties</include>
+				<include>README.md</include>
+			</includes>
+		</fileSet>
+	</fileSets>
+
+</archetype-descriptor>

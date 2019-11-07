@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<alambic>
+    <variables>
+        <!-- For example purpose only
+
+            <variable name="VARIABLE_NAME_EXAMPLE">variable value here</variable>
+        -->
+    </variables>
+</alambic>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alambic>
+    <variables>
+        <variable name="VARIABLE_NAME">variable value here</variable>
+    </variables>
+
+    <jobs>
+        <job name="all">
+            <execute-job name="example-job-1"/>
+            <execute-job name="example-job-2"/>
+            ...
+        </job>
+
+        <job name="example-job-1">
+            <source type="none" name="none"/>
+            <destination type="sql" name="drop-tables">
+                <driver>%DRIVER_LAMBDA%</driver>
+                <uri>%URI_LAMBDA_%ALAMBIC_TARGET_ENVIRONMENT%%</uri>
+                <login>%LOGIN_LAMBDA_%ALAMBIC_TARGET_ENVIRONMENT%%</login>
+                <passwd>%PWD_LAMBDA_%ALAMBIC_TARGET_ENVIRONMENT%%</passwd>
+                <pivot>%c1%</pivot>
+            </destination>
+        </job>
+
+        <job name="example-job-2">
+            ...
+        </job>
+    </jobs>
+</alambic>
