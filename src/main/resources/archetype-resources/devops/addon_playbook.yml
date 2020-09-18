@@ -5,7 +5,6 @@
   become_user: "{{ etl_user_name }}"
 
   vars:
-    addon_env: {}
     env_name: "{{ inventory_dir | regex_replace('.+/([^/]+)+$', '\\1') }}"
     addon_dir: "{{ playbook_dir }}"
 
