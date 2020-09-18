@@ -31,6 +31,10 @@
 			<directory>resources</directory>
 		</fileSet>
 
+		<fileSet filtered="true">
+			<directory>devops</directory>
+		</fileSet>
+
 		<fileSet>
 			<directory>vars</directory>
 		</fileSet>

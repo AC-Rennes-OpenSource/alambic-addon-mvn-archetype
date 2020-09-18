@@ -1,0 +1,2 @@
+- debug:
+    msg: "{{ addon_env.addon_var }}"
