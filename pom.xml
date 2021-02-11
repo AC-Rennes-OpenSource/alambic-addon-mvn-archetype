@@ -3,7 +3,7 @@
 	<groupId>alambic-addon.archetype</groupId>
 	<artifactId>alambic-addon-archetype</artifactId>
 	<name>alambic-addon-archetype</name>
-	<version>1.0.0</version>
+	<version>1.1.0-SNAPSHOT</version>
 	<description>Maven archetype to create new Alambic addon skeleton</description>
 
 	<properties>

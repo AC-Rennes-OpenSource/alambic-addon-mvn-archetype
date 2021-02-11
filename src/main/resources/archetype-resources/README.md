@@ -9,7 +9,7 @@ ${addon-description}
 $h2 How to deploy on the remote host
 $h3 Execute the command
 ```
-$ ansible-playbook install_addon.yml -i inventories/<environment>/hosts.yml --vault-password-file <path to the vault password file> --extra-vars="groupId=<addon group identifier> artifactId=<addon artifact identifier> version=<version> force_execute=<true | false> [file=<local archive full path> force_execute=<true | false>]"
+$ ansible-playbook install_addon.yml -i inventories/<environment>/hosts.yml --vault-password-file <path to the vault password file> --extra-vars="groupId=<addon group identifier> artifactId=<addon artifact identifier> version=<version> [file=<local archive full path> force_execute=<true | false>]"
 ```
 
 $h3 Description

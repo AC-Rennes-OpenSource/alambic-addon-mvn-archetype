@@ -21,6 +21,9 @@
             <directory>scripts</directory>
         </fileSet>
         <fileSet>
+            <directory>devops</directory>
+        </fileSet>
+        <fileSet>
             <includes>
                 <include>addon.properties</include>
                 <include>README.md</include>
